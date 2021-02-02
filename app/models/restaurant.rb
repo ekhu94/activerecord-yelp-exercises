@@ -11,11 +11,11 @@ class Restaurant < ActiveRecord::Base
 
     # not working
     def self.with_long_names
-        self.where('name.length > 12')
+        self.where('name.length > ?', 12)
     end
 
     def max_dishes
-        
+        self.order('dishes.length desc').limit(1)
     end
 
 end

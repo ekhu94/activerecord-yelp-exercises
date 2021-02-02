@@ -1,4 +1,4 @@
-Restaurant.destroy.all
+Restaurant.destroy_all
 
 r1 = Restaurant.create(name: "BWW")
 r2 = Restaurant.create(name: "Red Robin")
